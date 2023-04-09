@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0 0 50px 0;
+    background-color: #E9E9E3;
+}
+    
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
+}
+    
+li:not(:first-child) {
+    margin-top: 12px;
+}
+    
+h1 {
+    margin: 120px 0 17px 0;
+    text-align: left;
+    font-family: 'Azeret Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6F6F64;
+}
+    
+p {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 558px;
+    color: #6F6F64;
+}
+    
+.knopki {
+    margin-top: 74px;
+}
+    
+button {
+    width: 531px;
+    height: 58px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #6F6F64;
+    border: 2px solid #6F6F64;
+    border-radius: 0;
+    background-color: #E9E9E3;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.knopki button {
+    display: block;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+}
+    
+.col1 {
+    margin-right: 106px;
+}
+    
+.col2 {
+    margin-top: 120px;
+}
+    
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container img:not(:first-child) {
+    display: none;
+}
+
+.button:hover:not(.active) {
+    background-color: #6F6F64;
+    color: #FFFFFF;
+}
+
+.button.active {
+    background-color: #6F6F64;
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width:1200px) and (max-width:1350px) {
+    .col1 {
+        margin-right: 35px;
+    }
+}
+    
+@media screen and (max-width:1199px) {
+    h1 {
+        font-size: 46px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+}

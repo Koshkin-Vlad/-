@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATTE CAFE</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="static/fonts/AzeretMono-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="static/fonts/Inter-VariableFont_slnt,wght.ttf">
+</head>
+<body>
+    <div class="container">
+        <div class="col1">
+            <div class="text">
+                <h1>Menu</h1>
+                <p>We change our menu every season. Here is what we are currently dishing up.</p>
+            </div>
+            <div class="knopki">
+                <nav>
+                    <ul class="button-container">
+                        <li><button class="button active" onclick="changeImage('image1')" data-image="image1">Food Menu</button></li>
+                        <li><button class="button" onclick="changeImage('image2')" data-image="image2">Drinks Menu</button></li>
+                        <li><button class="button" onclick="changeImage('image3')" data-image="image3">Takeaway Menu</button></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+        <div class="col2 image-container">
+            <img id="image1" src="static/images/image1.png" alt="Food image">
+            <img id="image2" src="static/images/image2.png" alt="Drinks image">
+            <img id="image3" src="static/images/image3.png" alt="Takeaway image">
+        </div>
+    </div>
+
+</body>
+</html>
